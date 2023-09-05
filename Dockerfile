@@ -33,4 +33,4 @@ STOPSIGNAL SIGQUIT
 
 USER $UID
 
-CMD ["gunicorn", "-b", "0.0.0.0:8888", "httpbin:app", "-k", "gevent"]
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "httpbin:app", "-k", "gevent"]
