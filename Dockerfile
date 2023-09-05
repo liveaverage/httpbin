@@ -27,7 +27,7 @@ RUN /bin/bash -c "pip3 install --no-cache-dir -r <(pipenv lock -r)"
 ADD . /httpbin
 RUN pip3 install --no-cache-dir /httpbin
 
-EXPOSE 8888
+EXPOSE 8000
 
 STOPSIGNAL SIGQUIT
 
